@@ -1,1 +1,63 @@
 # project-on-Operating-system-
+
+##MiniRTOS: A Lightweight Real-Time Scheduler for IoT Devices on Linux
+
+ What Is MiniRTOS?
+MiniRTOS is a lightweight simulation of a Real-Time Operating System (RTOS) made for educational or IoT development purposes. It runs entirely in Linux userspace, meaning you don’t need real embedded hardware to understand how an RTOS works.
+
+It mimics core RTOS features like:
+
+Task scheduling
+
+Deadline management
+
+Interrupt handling
+
+Why Build MiniRTOS?
+IoT devices (like sensors and microcontrollers) often need to:
+
+Run tasks periodically
+
+Respond quickly to events
+
+Use low system resources
+
+MiniRTOS is designed to simulate these behaviors, making it perfect for learning how real embedded RTOSes (like FreeRTOS) work.
+
+Key Components
+Here are the core building blocks of MiniRTOS:
+
+1. Task Structure
+Each task (e.g., reading a sensor) is defined with:
+
+A name
+
+A period (how often it runs)
+
+A deadline
+
+A function pointer to the task code
+
+2. Earliest Deadline First (EDF) Scheduler
+Tasks are executed based on their next deadline
+
+The one with the closest (earliest) deadline runs first
+
+After running, a task’s next deadline is updated
+
+This is a popular real-time scheduling strategy.
+
+3. Timer/Tick Simulation
+Every 100ms, the system checks which task is due
+
+This simulates a hardware "tick" in real RTOS
+
+4. Interrupt Simulation with Unix Signals
+RTOS systems often respond to hardware interrupts
+
+MiniRTOS uses SIGUSR1 to simulate this
+
+If you send a signal from another terminal, it logs an “interrupt” occurred
+
+
+
