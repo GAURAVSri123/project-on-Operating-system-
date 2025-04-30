@@ -1,8 +1,10 @@
 # project-on-Operating-system-
 
-<b> MiniRTOS: A Lightweight Real-Time Scheduler for IoT Devices on Linux <./b> <br>
+# MiniRTOS: A Lightweight Real-Time Scheduler for IoT Devices on Linux 
 
-<b> What Is MiniRTOS?<b>
+
+ 
+<b> What Is MiniRTOS?<b> <br>
 MiniRTOS is a lightweight simulation of a Real-Time Operating System (RTOS) made for educational or IoT development purposes. It runs entirely in Linux userspace, meaning you don’t need real embedded hardware to understand how an RTOS works.
 
 <b>It mimics core RTOS features like:<b>
