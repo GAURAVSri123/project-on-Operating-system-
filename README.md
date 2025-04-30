@@ -7,7 +7,7 @@
 <b> What Is MiniRTOS?<b> <br>
 MiniRTOS is a lightweight simulation of a Real-Time Operating System (RTOS) made for educational or IoT development purposes. It runs entirely in Linux userspace, meaning you don’t need real embedded hardware to understand how an RTOS works.
 
-<b>It mimics core RTOS features like:<b>
+<b>It mimics core RTOS features like:<b> <br>
 
 Task scheduling
 
@@ -15,7 +15,8 @@ Deadline management
 
 Interrupt handling
 
-Why Build MiniRTOS?
+->Why Build MiniRTOS?
+
 IoT devices (like sensors and microcontrollers) often need to:
 
 Run tasks periodically
@@ -26,7 +27,7 @@ Use low system resources
 
 MiniRTOS is designed to simulate these behaviors, making it perfect for learning how real embedded RTOSes (like FreeRTOS) work.
 
-Key Components
+->Key Components
 Here are the core building blocks of MiniRTOS:
 
 1. Task Structure
