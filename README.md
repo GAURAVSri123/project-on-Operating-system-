@@ -63,13 +63,7 @@ MiniRTOS uses SIGUSR1 to simulate this
 If you send a signal from another terminal, it logs an “interrupt” occurred
 
 
-## Structure of  FreeRTOS
-MiniRTOS/
-├── README.md         ← Project overview
-├── LICENSE           ← Open source license (MIT)
-├── Makefile          ← For easy build
-└── src/
-    └── minirtos.cpp  ← Full C++ source code
+
 
 
 
