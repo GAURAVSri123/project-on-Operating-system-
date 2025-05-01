@@ -33,13 +33,13 @@ Here are the core building blocks of MiniRTOS:
 1. Task Structure
 Each task (e.g., reading a sensor) is defined with:
 
-A name
+.A name
 
-A period (how often it runs)
+.A period (how often it runs)
 
-A deadline
+.A deadline
 
-A function pointer to the task code
+.A function pointer to the task code
 
 2. Earliest Deadline First (EDF) Scheduler
 Tasks are executed based on their next deadline
@@ -61,6 +61,17 @@ RTOS systems often respond to hardware interrupts
 MiniRTOS uses SIGUSR1 to simulate this
 
 If you send a signal from another terminal, it logs an “interrupt” occurred
+
+
+## Structure of  FreeRTOS
+MiniRTOS/
+├── README.md         ← Project overview
+├── LICENSE           ← Open source license (MIT)
+├── Makefile          ← For easy build
+└── src/
+    └── minirtos.cpp  ← Full C++ source code
+
+
 
 
 
