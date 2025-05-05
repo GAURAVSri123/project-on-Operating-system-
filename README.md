@@ -46,9 +46,11 @@ Each task (e.g., reading a sensor) is defined with:
 This is a popular real-time scheduling strategy.
 
 5. Timer/Tick Simulation
+   
    Every 100ms, the system checks which task is due This simulates a hardware "tick" in real RTOS
 
 7. Interrupt Simulation with Unix Signals
+   
    RTOS systems often respond to hardware interrupts MiniRTOS uses SIGUSR1 to simulate this
 If you send a signal from another terminal, it logs an “interrupt” occurred
 
@@ -60,7 +62,8 @@ General OS (like Windows/Linux):
 Focuses on overall performance and multitasking, but does not guarantee when a specific task will finish. It may delay time-sensitive tasks due to background activity, UI management, etc.
 
 🔁 In Simple Terms:
-RTOS = "Always finish important tasks on time."
+RTOS = "Always finish important tasks on time."  
+
 OS = "Finish tasks eventually, aiming for efficiency and fairness."
 
 
