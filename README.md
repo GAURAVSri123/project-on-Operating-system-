@@ -55,6 +55,16 @@ Every 100ms, the system checks which task is due This simulates a hardware "tick
 RTOS systems often respond to hardware interrupts MiniRTOS uses SIGUSR1 to simulate this
 If you send a signal from another terminal, it logs an “interrupt” occurred
 
+## what is the major diffrence betwwen RTOS and general puprose OS
+RTOS (Real-Time Operating System):
+Focuses on predictable, timely execution of tasks. It guarantees that high-priority tasks are completed within a specific time limit (real-time deadlines).
+
+General OS (like Windows/Linux):
+Focuses on overall performance and multitasking, but does not guarantee when a specific task will finish. It may delay time-sensitive tasks due to background activity, UI management, etc.
+
+🔁 In Simple Terms:
+RTOS = "Always finish important tasks on time."
+OS = "Finish tasks eventually, aiming for efficiency and fairness."
 
 
 
