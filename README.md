@@ -67,6 +67,14 @@ RTOS = "Always finish important tasks on time."
 OS = "Finish tasks eventually, aiming for efficiency and fairness."
 
 
+## Step-by-step implementation of MiniRTOS
+📁 Step 1: Create Project Directory
+Open your terminal in Linux or WSL, then:
+
+''' mkdir -p ~/MiniRTOS/src
+     cd ~/MiniRTOS '''
+
+
 
 
 
