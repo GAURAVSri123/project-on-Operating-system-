@@ -42,20 +42,17 @@ Each task (e.g., reading a sensor) is defined with:
 
 
 3. Earliest Deadline First (EDF) Scheduler
-   
-Tasks are executed based on their next deadline The one with the closest (earliest) deadline runs first After running, a task’s next deadline is updated
+   Tasks are executed based on their next deadline The one with the closest (earliest) deadline runs first After running, a task’s next deadline is updated
 This is a popular real-time scheduling strategy.
 
 5. Timer/Tick Simulation
-   
-Every 100ms, the system checks which task is due This simulates a hardware "tick" in real RTOS
+   Every 100ms, the system checks which task is due This simulates a hardware "tick" in real RTOS
 
 7. Interrupt Simulation with Unix Signals
-   
-RTOS systems often respond to hardware interrupts MiniRTOS uses SIGUSR1 to simulate this
+   RTOS systems often respond to hardware interrupts MiniRTOS uses SIGUSR1 to simulate this
 If you send a signal from another terminal, it logs an “interrupt” occurred
 
-## what is the major diffrence betwwen RTOS and general puprose OS
+## what is the major difference between RTOS and general puprose OS -
 RTOS (Real-Time Operating System):
 Focuses on predictable, timely execution of tasks. It guarantees that high-priority tasks are completed within a specific time limit (real-time deadlines).
 
