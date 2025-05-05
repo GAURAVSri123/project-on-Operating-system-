@@ -4,7 +4,7 @@
 
 
  
-<b> What Is MiniRTOS?<b> <br>
+## What Is MiniRTOS?
 MiniRTOS is a lightweight simulation of a Real-Time Operating System (RTOS) made for educational or IoT development purposes. It runs entirely in Linux userspace, meaning you don’t need real embedded hardware to understand how an RTOS works.
 It mimics core RTOS features like:<b> <br>
 1.Task scheduling
@@ -14,19 +14,19 @@ It mimics core RTOS features like:<b> <br>
 ## Why Build MiniRTOS?
 
 IoT devices (like sensors and microcontrollers) often need to:
-(i) Run tasks periodically.
-(ii) Respond quickly to events.
-(iii) Use low system resources.
+(i) Run tasks periodically. </.br>
+(ii) Respond quickly to events.  </.br>
+(iii) Use low system resources.  </.br>
 MiniRTOS is designed to simulate these behaviors, making it perfect for learning how real embedded RTOSes (like FreeRTOS) work.
 
 ### Key Components
 Here are the core building blocks of MiniRTOS:
 1. Task Structure
-Each task (e.g., reading a sensor) is defined with:
-(i) A name
-(ii) A period (how often it runs)
-(iii) A deadline
-(iv) A function pointer to the task code
+Each task (e.g., reading a sensor) is defined with: <./br>
+(i) A name          <./br>
+(ii) A period (how often it runs) <./br>
+(iii) A deadline <./br>
+(iv) A function pointer to the task code <./br>
 
 2. Earliest Deadline First (EDF) Scheduler
 Tasks are executed based on their next deadline The one with the closest (earliest) deadline runs first After running, a task’s next deadline is updated
